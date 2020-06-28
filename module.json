@@ -2,7 +2,7 @@
     "name": "lib-targeting",
     "title": "LIB Targeting",
     "description": "a library that builds a target table & allows npc targeting",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "author": {
         "name" : "Eadorin",
         "email" : "eadorin@gmail.com",
@@ -16,5 +16,5 @@
     "manifest": "https://raw.githubusercontent.com/eadorin/lib-targeting/master/module.json",
     "download": "https://github.com/eadorin/lib-targeting/archive/master.zip",
     "url": "https://github.com/eadorin/lib-targeting",
-    "changelog": "https:github.com/eadorin/lib-targeting/blob/v0.1.0/changelog.md"
+    "changelog": "https:github.com/eadorin/lib-targeting/blob/v0.1.1/changelog.md"
 }

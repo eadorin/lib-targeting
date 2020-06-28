@@ -64,7 +64,7 @@ export class TargetsTable {
         await this.records.add(record);
 
         //------------ If user isn't GM, use websockets to convey the info ------------
-        if (!user.isGM) {
+        if (!game.user.isGM) {
             // not a GM. Send the record to the GM to add to
             // their table, and then call storeTable();
             this.sendSocketData(record,messageType);
@@ -105,7 +105,7 @@ export class TargetsTable {
         let t = (target instanceof Token) ? target : TargetsTable.getTokenByTokenId(target);
         let record = await this.getRecord(source,t);
         this.records.delete(record);
-        if (!user.isGM) {
+        if (!game.user.isGM) {
             this.sendSocketData(record,messageType);
             return;
         }
