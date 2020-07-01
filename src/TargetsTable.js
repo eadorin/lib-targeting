@@ -58,6 +58,7 @@ export class TargetsTable {
      * @param {*} target 
      */
     async addTarget(source, target) {
+
         let messageType = SOCKET_MESSAGE_TYPES.ADD_TARGET;
         let t = (target instanceof Token) ? target : TargetsTable.getTokenByTokenId(target);
         let record = await this.getRecord(source,t)

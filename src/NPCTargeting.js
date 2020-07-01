@@ -28,6 +28,7 @@ export class NPCTargeting {
      * @param {Boolean} tf  is token control enabled (true) or released (false)
      */
     static async controlTokenHandler(token, tf) {
+        console.log("npc", NPCTargeting.controlledUnits);
         if (tf) {
             NPCTargeting.controlledUnits.push(token);
         } else {
